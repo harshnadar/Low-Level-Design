@@ -7,4 +7,8 @@ class LogLevel(Enum):
     ERROR = 4
     FATAL = 5
 
+    @property
+    def name_str(self) -> str:
+        """Return the name of the log level."""
+        return self.name.upper()
    
